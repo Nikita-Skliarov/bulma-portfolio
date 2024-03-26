@@ -1,6 +1,6 @@
 # Portfolio
 
-This is a simple portfolio website built using HTML/CSS, Bulma framework, jQuery for frontend interactions, and PHP for backend functionalities like sending emails and database operations using PHPMailer and PDO.
+This is a simple portfolio website built using HTML/CSS, Bulma framework, jQuery for frontend interactions, and PHP for backend functionalities like sending emails using PHPMailer.
 
 ## Website
 
@@ -12,7 +12,6 @@ You can view the live version of this portfolio at [ns-my-portfolio.ns](http://n
 - Interactive frontend elements powered by jQuery
 - PHP backend for contact form submission and database operations
 - Utilizes PHPMailer for secure email sending
-- PDO for secure database interactions
 
 ## Setup
 
@@ -52,7 +51,6 @@ You can view the live version of this portfolio at [ns-my-portfolio.ns](http://n
 - Bulma - https://bulma.io/
 - jQuery - https://jquery.com/
 - PHPMailer - https://github.com/PHPMailer/PHPMailer
-- PDO - https://www.php.net/manual/en/book.pdo.php
 
 ## License
 
