@@ -1,0 +1,280 @@
+/* IMPORTANT: CSS styles for different themes must be both changed (@media... and [data-theme=...]). 
+In other case It won't work. */
+
+#tab-content section {
+    display: none;
+}
+
+#tab-content section.is-active {
+    display: block;
+}
+
+.bm--card-equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-with-full-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-with-full-height .card-footer {
+    margin-top: auto;
+}
+
+.half-of-parent {
+    height: 50%;
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Dark and white mode styles for .inner */
+@media (prefers-color-scheme: dark) {
+    .inner {
+        border: 3px dashed rgba(201, 88, 88, 0.176);
+    }
+}
+
+[data-theme=dark],
+.theme-dark {
+    .inner {
+        border: 3px dashed rgba(201, 88, 88, 0.176);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .inner {
+        border: 3px dashed #33333327;
+    }
+}
+
+[data-theme=light],
+.theme-dark {
+    .inner {
+        border: 3px dashed #33333327;
+    }
+}
+
+#number {
+    font-weight: 600px;
+}
+
+circle {
+    fill: none;
+    stroke: url(#gradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*
+  stroke-dashoffset:
+  
+  0 = full circle
+  472 = empty circle
+
+  Formula:
+    stroke-dashoffset = stroke-dasharray - (stroke-dasharray * percentage)
+  
+ */
+
+@keyframes HTML {
+
+    100% {
+        stroke-dashoffset: calc(472px - (472px * 0.75));
+    }
+}
+
+@keyframes CSS {
+
+    100% {
+        stroke-dashoffset: calc(472px - (472px * 0.48));
+    }
+}
+
+@keyframes JavaScript {
+
+    100% {
+        stroke-dashoffset: calc(472px - (472px * 0.32));
+    }
+}
+
+@keyframes PHP {
+
+    100% {
+        stroke-dashoffset: calc(472px - (472px * 0.73));
+    }
+}
+
+@keyframes Laravel {
+
+    100% {
+        stroke-dashoffset: calc(472px - (472px * 0.08));
+    }
+}
+
+@keyframes MySQL {
+
+    100% {
+        stroke-dashoffset: calc(472px - (472px * 0.73));
+    }
+}
+
+@keyframes Bootstrap {
+
+    100% {
+        stroke-dashoffset: calc(472px - (472px * 1));
+    }
+}
+
+@keyframes Security {
+
+    100% {
+        stroke-dashoffset: calc(472px - (472px * 0.41));
+    }
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.timelines h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.d-flex-2 {
+    display: flex;
+    align-items: center;
+}
+
+.timeline-area {
+    padding: 80px 0;
+}
+
+.all-timelines {
+    position: relative;
+}
+
+.timelines h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.all-timelines::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    width: 2px;
+    background: #efa22f;
+    top: 20px;
+}
+
+.single-timeline {
+    margin-bottom: 22px;
+}
+
+.timeline-blank {
+    width: 50%;
+}
+
+.timeline-text {
+    width: 50%;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.timeline-text h6 {
+    font-weight: 900;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.timeline-text span {
+    display: block;
+    width: 100%;
+}
+
+.single-timeline:nth-child(even) .timeline-text span {
+    text-align: right;
+}
+
+.t-square {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: -6px;
+    background: #efa22f;
+}
+
+.single-timeline:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.single-timeline:nth-child(even) .t-square {
+    right: -6px;
+    left: unset;
+}
+
+.single-timeline:nth-child(even) .timeline-text {
+    padding-left: 0;
+    padding-right: 30px;
+    text-align: right;
+}
