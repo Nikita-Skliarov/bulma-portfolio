@@ -4,7 +4,7 @@ This is a simple portfolio website built using HTML/CSS, Bulma framework, jQuery
 
 ## Website
 
-You can view the live version of this portfolio at [ns-my-portfolio.ns](http://ns-my-portfolio.ns).
+You can view the live version of this portfolio at [ns-my-portfolio.nl](http://ns-my-portfolio.nl).
 
 ## Features
 
