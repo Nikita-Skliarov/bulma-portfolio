@@ -14,7 +14,7 @@ function extractNumber(element) {
 }
 
 // Define id's of the circles
-const circles = ['HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'MySQL', 'Bootstrap', 'Security'];
+const circles = ['HTMLCSS', 'CSHARP', 'JavaScript', 'PHP', 'Laravel', 'MySQL', 'Bootstrap', 'Security'];
 
 // Loop through the circles and make all the logic
 circles.forEach(circle => {

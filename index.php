@@ -58,10 +58,10 @@
 
   <!-- Notification that email was sent -->
   <?php if (isset($_GET['success']) && $_GET['success'] == 'true'): ?>
-  <div class="notification is-success is-light m-3">
-    <button class="delete" id="deleteNotification"></button>
-    <strong>Thank you!</strong> Your message has been sent.
-  </div>
+    <div class="notification is-success is-light m-3">
+      <button class="delete" id="deleteNotification"></button>
+      <strong>Thank you!</strong> Your message has been sent.
+    </div>
   <?php endif; ?>
 
   <!-- Home section -->
@@ -113,19 +113,20 @@
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <h1 class="subtitle is-size-6 half-of-parent">Exercises at school</h1>
-            <h1 class="title half-of-parent">435</h1>
+            <h1 class="title half-of-parent count" data-target="497">0</h1>
           </div>
           <div class="column">
             <h1 class="subtitle is-size-6 half-of-parent">Projects</h1>
-            <h1 class="title half-of-parent">5</h1>
+            <h1 class="title half-of-parent count" data-target="5">0</h1>
           </div>
           <div class="column">
-            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffie drunk</h1>
-            <h1 class="title half-of-parent">735</h1>
+            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk</h1>
+            <h1 class="title half-of-parent count" data-target="938">0</h1>
           </div>
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- Third section - tabs section -->
@@ -170,7 +171,7 @@
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div class="card">  
               <div class="card-content">
                 <div class="media">
                   <div class="media-left">
@@ -312,11 +313,10 @@
                     </div>
                     <div class="content">
                       A school end project of my first year. The project is a website for a mall. The website has now a
-                      6 shops, log-in and sign-up system and a shopping cart (almost). But the project is still in
-                      development, so more features will be added.
+                      6 shops, log-in and sign-up system and a shopping cart.
                       <br />
                       <br />
-                      <time class="has-text-weight-bold">January 2024 - Still in process</time>
+                      <time class="has-text-weight-bold">January 2024 - April 2024</time>
                     </div>
                   </div>
                   <div class="card-image">
@@ -386,6 +386,14 @@
                       <time class="has-text-weight-bold">March 2024</time>
                     </div>
                   </div>
+                  <div class="card-footer">
+                  <p class="card-footer-item">
+                      <span>
+                        <a href="https://github.com/Nikita-Skliarov/bulma-portfolio" target="_blank">GitHub <i
+                            class="fa-brands fa-square-github"></i></a>
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -402,12 +410,12 @@
             <!-- First card -->
             <div class="card">
               <div class="columns is-3">
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="HTML">
-                  <h1 class="title">HTML</h1>
+                <div class="column is-flex is-flex-direction-column is-align-items-center" id="HTMLCSS">
+                  <h1 class="title">HTML/CSS</h1>
                   <div class="skill">
                     <div class="outer">
                       <div class="inner">
-                        <div class='number'>67%</div>
+                        <div class='number'>55%</div>
                       </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -421,12 +429,12 @@
                     </svg>
                   </div>
                 </div>
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="CSS">
-                  <h1 class="title">CSS</h1>
+                <div class="column is-flex is-flex-direction-column is-align-items-center" id="PHP">
+                  <h1 class="title">PHP</h1>
                   <div class="skill is-justify-content-center">
                     <div class="outer">
                       <div class="inner">
-                        <div class='number'>48%</div>
+                        <div class='number'>71%</div>
                       </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -465,12 +473,12 @@
                     </svg>
                   </div>
                 </div>
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="PHP">
-                  <h1 class="title">PHP</h1>
+                <div class="column is-flex is-flex-direction-column is-align-items-center" id="CSHARPw">
+                  <h1 class="title">C#</h1>
                   <div class="skill is-justify-content-center">
                     <div class="outer">
                       <div class="inner">
-                        <div class='number'>73%</div>
+                        <div class='number'>22%</div>
                       </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -495,7 +503,7 @@
                   <div class="skill">
                     <div class="outer">
                       <div class="inner">
-                        <div class='number'>8%</div>
+                        <div class='number'>12%</div>
                       </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -579,15 +587,15 @@
             <div class="columns is-centered has-text-weight-bold">
               <div class="column">
                 <p class="block subtitle">Web</p>
-                <progress class="progress is-link" value="30" max="100">67%</progress>
+                <progress class="progress is-link" value="67" max="100">67%</progress>
                 <p class="block subtitle">Scrum</p>
-                <progress class="progress is-primary" value="33" max="100">67%</progress>
+                <progress class="progress is-primary" value="100" max="100">100%</progress>
                 <p class="block subtitle">SEO</p>
-                <progress class="progress is-info" value="60" max="100">67%</progress>
+                <progress class="progress is-info" value="60" max="100">60%</progress>
                 <p class="block subtitle">Git</p>
-                <progress class="progress is-success" value="71" max="100">67%</progress>
+                <progress class="progress is-success" value="100" max="100">100%</progress>
                 <p class="block subtitle">Linux</p>
-                <progress class="progress is-danger" value="35" max="100">67%</progress>
+                <progress class="progress is-danger" value="35" max="100">35%</progress>
               </div>
             </div>
           </div>
@@ -757,6 +765,32 @@
                       <div class="t-square"></div>
                     </div>
                   </div>
+
+                  <!--SINGLE TIMELINE-->
+                  <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                      <span>
+                        <i class="fa-solid fa-crown"></i>
+                        <h6>Apr 24, 2024</h6>
+                        <span class="has-text-weight-bold">Eindproject leerjaar 1</span>
+                      </span>
+                      <div class="t-square"></div>
+                    </div>
+                  </div>
+
+                  <!--SINGLE TIMELINE-->
+                  <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                      <span>
+                        <h6>Apr 25, 2024</h6>
+                        C# Introductie
+                      </span>
+                      <div class="t-square"></div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -843,7 +877,8 @@
           </span>
           <span>GitHub</span>
         </a>
-        <a href="https://www.linkedin.com/in/nikita-skliarov-46a2752b1/" class="button is-rounded is-link is-outlined" target='_blank'>
+        <a href="https://www.linkedin.com/in/nikita-skliarov-46a2752b1/" class="button is-rounded is-link is-outlined"
+          target='_blank'>
           <span class="icon is-small">
             <i class="fab fa-linkedin"></i>
           </span>
@@ -951,5 +986,8 @@
 
 <!-- Circles script -->
 <script src="js/circle-scores.js"></script>
+
+<!-- Stats counter animation -->
+<script src="js/stats-animation.js"></script>
 
 </html>
