@@ -120,7 +120,7 @@
             <h1 class="title half-of-parent count" data-target="5">0</h1>
           </div>
           <div class="column">
-            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk</h1><h1 class="title half-of-parent count" data-target="970">970</h1>
+            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk (LU 05.01.24)</h1><h1 class="title half-of-parent count" data-target="978">978</h1>
           </div>
         </div>
       </div>
