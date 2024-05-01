@@ -57,15 +57,12 @@
   </nav>
 
   <!-- Notification that email was sent -->
-  <?php
-  if (isset ($_GET['success']) && $_GET['success'] == 'true') {
-    echo '<div class="notification is-success is-light m-3">
+  <?php if (isset($_GET['success']) && $_GET['success'] == 'true'): ?>
+  <div class="notification is-success is-light m-3">
     <button class="delete" id="deleteNotification"></button>
     <strong>Thank you!</strong> Your message has been sent.
-  </div>';
-  }
-
-  ?>
+  </div>
+  <?php endif; ?>
 
   <!-- Home section -->
   <section class="hero is-fullheight">
