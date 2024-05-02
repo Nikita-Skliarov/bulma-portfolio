@@ -48,7 +48,7 @@
       </div>
     </div>
   </nav>
-  
+
   <!-- Dark/light mode switch - placed sticky (see stylesheet) -->
   <button class="button is-medium sticky-button is-rounded" id="theme-toggle" aria-haspopup="true" aria-controls="change-mod-dropdown"
     aria-controls="dropdown-menu">
@@ -890,100 +890,17 @@
   </footer>
 </body>
 
-<script>
-  // Function to toggle between light and dark mode
-  function toggleTheme() {
-    const htmlElement = $('html');
-    if (htmlElement.attr('data-theme') === 'dark') {
-      htmlElement.attr('data-theme', 'light');
-      $('#theme-toggle i').removeClass('fa-moon').addClass('fa-lightbulb');
-    } else {
-      htmlElement.attr('data-theme', 'dark');
-      $('#theme-toggle i').removeClass('fa-lightbulb').addClass('fa-moon');
-    }
-  }
+<!-- Email validation script -->
+<script src="js/email-validation.js"></script>
 
-  // Event listener for theme toggle button
-  $('#theme-toggle').on('click', function () {
-    toggleTheme();
-  });
+<!-- Notification button script -->
+<script src="js/notification-button.js"></script>
 
-  // Detect user's theme and update the toggle button icon accordingly
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    $('#theme-toggle i').removeClass('fa-lightbulb').addClass('fa-moon');
-  }
+<!-- Hyperlinks and tabs script -->
+<script src="js/hyperlinks-and-tabs.js"></script>
 
-  // Make tabs active on click and change content accordingly
-  $('.tab').on('click', function () {
-    $('.tab').removeClass('is-active');
-    $(this).addClass('is-active');
-
-    const tabContent = $(this).data('tab');
-    $('#tab-content section').removeClass('is-active');
-    $(`#tab-content section[data-content="${tabContent}"]`).addClass('is-active');
-  });
-
-  // Smooth scroll of hyperlinks
-  $(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-  });
-
-  // Navbar buttons script
-  const tabButtons = $('.tab-button');
-  tabButtons.on('click', function () {
-    // Scroll to section 'tabs'
-    $('html, body').animate({
-      scrollTop: $('#tabs').offset().top
-    }, 500);
-
-    // Open following tab
-    const tab = $(this).data('tab');
-    $('.tab').removeClass('is-active');
-    $(`.tab[data-tab="${tab}"]`).addClass('is-active');
-    // Show following tab
-    $('#tab-content section').removeClass('is-active');
-    $(`#tab-content section[data-content="${tab}"]`).addClass('is-active');
-  });
-
-
-  // Validate email input
-  const emailInput = $('#emailInput');
-  emailInput.on('input', function () {
-    const email = emailInput.val();
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const emailDangerText = $('#emailDanger');
-    const submitButton = $('#submitButton');
-
-    // Check if email is valid
-    if (emailPattern.test(email)) {
-      emailInput.removeClass('is-danger');
-      emailInput.addClass('is-success');
-
-      // Hide invalid email message
-      emailDangerText.removeClass('is-display-block');
-      emailDangerText.addClass('is-display-none');
-
-      // Enable submit button if it disabled
-      submitButton.prop('disabled', false);
-    } else {
-      emailInput.removeClass('is-success');
-      emailInput.addClass('is-danger');
-      emailDangerText.addClass('is-display-block');
-
-      // Disable submit button if email is invalid
-      submitButton.prop('disabled', true);
-    }
-  });
-
-  // Delete notification button
-  $('#deleteNotification').on('click', function () {
-    $('.notification').remove();
-  });
-</script>
+<!-- Theme toggler script -->
+<script src="js/theme-toggler.js"></script>
 
 <!-- Circles script -->
 <script src="js/circle-scores.js"></script>
