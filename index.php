@@ -120,7 +120,7 @@
             <h1 class="title half-of-parent count" data-target="5">0</h1>
           </div>
           <div class="column">
-            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk (LU 05.01.24)</h1><h1 class="title half-of-parent count" data-target="978">978</h1>
+            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk (LU 05.01.24)</h1><h1 class="title half-of-parent count" data-target="980">0</h1>
           </div>
         </div>
       </div>
@@ -472,7 +472,7 @@
                     </svg>
                   </div>
                 </div>
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="CSHARPw">
+                <div class="column is-flex is-flex-direction-column is-align-items-center" id="CSHARP">
                   <h1 class="title">C#</h1>
                   <div class="skill is-justify-content-center">
                     <div class="outer">
