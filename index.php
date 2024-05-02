@@ -24,13 +24,6 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <!-- Left side -->
-    <div class="navbar-start">
-      <button class="button m-3" id="theme-toggle" aria-haspopup="true" aria-controls="change-mod-dropdown"
-        aria-controls="dropdown-menu">
-        <i class="fa-regular fa-lightbulb"></i>
-      </button>
-    </div>
 
     <!-- Right side -->
     <div class="navbar-end">
@@ -55,6 +48,14 @@
       </div>
     </div>
   </nav>
+  
+  <!-- Dark/light mode switch - placed sticky (see stylesheet) -->
+  <button class="button is-medium sticky-button is-rounded" id="theme-toggle" aria-haspopup="true" aria-controls="change-mod-dropdown"
+    aria-controls="dropdown-menu">
+    <span class="icon">
+    <i class="fa-regular fa-lightbulb"></i>
+    </span>
+  </button>
 
   <!-- Notification that email was sent -->
   <?php if (isset($_GET['success']) && $_GET['success'] == 'true'): ?>
@@ -120,7 +121,8 @@
             <h1 class="title half-of-parent count" data-target="5">0</h1>
           </div>
           <div class="column">
-            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk (LU 05.01.24)</h1><h1 class="title half-of-parent count" data-target="980">0</h1>
+            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk (LU 05.01.24)</h1>
+            <h1 class="title half-of-parent count" data-target="980">0</h1>
           </div>
         </div>
       </div>

@@ -319,11 +319,25 @@ p {
 }
 
 #button-around-chevron:hover {
-        color: green;
-        border-color: green;
-        background-color: green;
+    color: green;
+    border-color: green;
+    background-color: green;
 
-        #chevron {
-            color: white;
-        }
+    #chevron {
+        color: white;
+    }
+}
+
+.sticky-button {
+    position: sticky;
+    top: 30px;
+    left: 25px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    .sticky-button {
+        top: 90%;
+        left: 80%;
+    }
 }
