@@ -279,4 +279,51 @@ p {
     padding-right: 30px;
     text-align: right;
 }
-  
+
+@keyframes chevron {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#chevron {
+    animation: chevron;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes button-around-chevron-shining {
+    0% {
+        border-color: #efa22f;
+    }
+
+    50% {
+        border-color: #f7c52b;
+    }
+
+    100% {
+        border-color: #efa22f;
+    }
+}
+
+#button-around-chevron {
+    animation: button-around-chevron-shining 2s linear infinite;
+}
+
+#button-around-chevron:hover {
+        color: green;
+        border-color: green;
+        background-color: green;
+
+        #chevron {
+            color: white;
+        }
+}
