@@ -71,7 +71,7 @@
       <div class="container">
         <h1 class="title">Welcome to my Portfolio. Explore a showcase of my passion, creativity, and
           dedication to IT.</h1>
-        <a href="#about" class="button is-large is-rounded is-primary is-outlined mt-5" id="button-around-chevron">
+        <a href="#about" class="button is-large is-rounded is-primary mt-5" id="button-around-chevron">
           <span class="icon is-small">
             <i class="fas fa-chevron-down" id="chevron"></i>
           </span>

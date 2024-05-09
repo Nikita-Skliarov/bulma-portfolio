@@ -300,29 +300,6 @@ p {
     animation-iteration-count: infinite;
 }
 
-@keyframes button-around-chevron-shining {
-    0% {
-        border-color: #efa22f;
-    }
-
-    50% {
-        border-color: #f7c52b;
-    }
-
-    100% {
-        border-color: #efa22f;
-    }
-}
-
-#button-around-chevron {
-    animation: button-around-chevron-shining 2s linear infinite;
-}
-
-#button-around-chevron {
-    transition: none;
-}
-
-
 #button-around-chevron:hover {
     color: green;
     border-color: green;
