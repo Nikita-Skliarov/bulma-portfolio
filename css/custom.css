@@ -318,6 +318,11 @@ p {
     animation: button-around-chevron-shining 2s linear infinite;
 }
 
+#button-around-chevron {
+    transition: none;
+}
+
+
 #button-around-chevron:hover {
     color: green;
     border-color: green;
