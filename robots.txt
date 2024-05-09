@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /php/
+Crawl-delay: 5
+Sitemap: https://ns-my-portfolio.nl/sitemap.xml

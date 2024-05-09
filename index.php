@@ -15,10 +15,21 @@
   <link rel="stylesheet" href="css/custom.css">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Welcome to my Portfolio. Explore a showcase of my passion, creativity, and dedication to IT.">
   <script src="https://kit.fontawesome.com/c81480a66a.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
-
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Dataset",
+  "name": "Nikita Skliarov",
+  "description": "Welcome to my Portfolio. Explore a showcase of my passion, creativity, and dedication to IT.",
+  "spatialCoverage": "Hengelo, Overijssel, Netherlands",
+  "license": "MIT",
+  "datePublished": "2024-09-05"
+}
+</script>
 </head>
 
 <body>
@@ -121,7 +132,8 @@
             <h1 class="title half-of-parent count" data-target="5">0</h1>
           </div>
           <div class="column">
-            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk (LU 09.05.24)</h1><h1 class="title half-of-parent count" data-target="1006">0</h1>
+            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk (LU 09.05.24)</h1>
+            <h1 class="title half-of-parent count" data-target="1006">0</h1>
           </div>
         </div>
       </div>
