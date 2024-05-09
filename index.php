@@ -416,7 +416,7 @@
                   <div class="skill">
                     <div class="outer">
                       <div class="inner">
-                        <div class='number'>55%</div>
+                        <div class='number'>58%</div>
                       </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -479,7 +479,7 @@
                   <div class="skill is-justify-content-center">
                     <div class="outer">
                       <div class="inner">
-                        <div class='number'>22%</div>
+                        <div class='number'>30%</div>
                       </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">

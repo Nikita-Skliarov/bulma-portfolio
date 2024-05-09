@@ -113,14 +113,14 @@ svg {
 @keyframes HTMLCSS {
 
     100% {
-        stroke-dashoffset: calc(472px - (472px * 0.55));
+        stroke-dashoffset: calc(472px - (472px * 0.58));
     }
 }
 
 @keyframes CSHARP {
 
     100% {
-        stroke-dashoffset: calc(472px - (472px * 0.22));
+        stroke-dashoffset: calc(472px - (472px * 0.30));
     }
 }
 
