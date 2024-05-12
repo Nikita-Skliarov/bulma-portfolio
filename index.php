@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="css/custom.css">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Welcome to my Portfolio. Explore a showcase of my passion, creativity, and dedication to IT.">
+  <meta name="description"
+    content="Welcome to my Portfolio. Explore a showcase of my passion, creativity, and dedication to IT.">
   <script src="https://kit.fontawesome.com/c81480a66a.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
@@ -40,19 +41,23 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <button class="button tab-button" data-tab="1">
+          <!-- Language Buttons -->
+          <button class="button lang-button" data-lang="en">EN</button>
+          <button class="button lang-button" data-lang="nl">NL</button>
+          
+          <button class="button tab-button" id="tab-education" data-tab="1">
             Education
           </button>
-          <button class="button tab-button" data-tab="2">
+          <button class="button tab-button" id="tab-experience" data-tab="2">
             Experience
           </button>
-          <button class="button tab-button" data-tab="3">
+          <button class="button tab-button" id="tab-skills" data-tab="3">
             Skills
           </button>
-          <button class="button tab-button" data-tab="4">
+          <button class="button tab-button" id="tab-certificates" data-tab="4">
             Certificates & Awards
           </button>
-          <a class="button" href="#contactForm">
+          <a class="button" id="tab-contact-me" href="#contactForm">
             Contact me!
           </a>
         </div>
@@ -80,8 +85,8 @@
   <section class="hero is-fullheight">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">Welcome to my Portfolio. Explore a showcase of my passion, creativity, and
-          dedication to IT.</h1>
+        <h1 class="title" id="portfolio-title">Welcome to my Portfolio. Explore a showcase of my passion, creativity,
+          and dedication to IT.</h1>
         <a href="#about" class="button is-large is-rounded is-primary mt-5" id="button-around-chevron">
           <span class="icon is-small">
             <i class="fas fa-chevron-down" id="chevron"></i>
@@ -93,7 +98,6 @@
 
   <!-- Second section - about section -->
   <section id="about" class="hero is-fullheight">
-
     <!-- About me part - face and info -->
     <div class="columns is-centered m-5">
       <div class="column"></div>
@@ -104,13 +108,13 @@
         <h1 class="title">Nikita Skliarov</h1>
         <h2 class="subtitle">Software Developer</h2>
         <div class="content is-medium">
-          <div class="block">
+          <div class="block" id="age">
             Age: <strong>19</strong>
           </div>
-          <div class="block">
+          <div class="block" id="nationality">
             Nationality: <strong>Ukrainian</strong>
           </div>
-          <div class="block">
+          <div class="block" id="education">
             Education: 1st year student at <strong>ROC van Twente</strong> at the <strong>Software Developer</strong>
             course.
           </div>
@@ -125,15 +129,15 @@
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <h1 class="subtitle is-size-6 half-of-parent">Exercises at school</h1>
-            <h1 class="title half-of-parent count" data-target="524">524</h1>
+            <h1 class="title half-of-parent count" data-target="525">0</h1>
           </div>
           <div class="column">
             <h1 class="subtitle is-size-6 half-of-parent">Projects</h1>
             <h1 class="title half-of-parent count" data-target="5">0</h1>
           </div>
           <div class="column">
-            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk (LU 09.05.24)</h1>
-            <h1 class="title half-of-parent count" data-target="1006">0</h1>
+            <h1 class="subtitle is-size-6 half-of-parent">Cups of coffee drunk (LU 10.05.24)</h1>
+            <h1 class="title half-of-parent count" data-target="1030">0</h1>
           </div>
         </div>
       </div>
@@ -918,5 +922,49 @@
 
 <!-- Stats counter animation -->
 <script src="js/stats-animation.js"></script>
+
+<script>
+  const enTranslations = {
+    'tab-education': 'Education',
+    'tab-experience': 'Experience',
+    'tab-skills': 'Skills',
+    'tab-certificates': 'Certificates & Awards',
+    'tab-contact-me': 'Contact me',
+    'portfolio-title': 'Welcome to my Portfolio. Explore a showcase of my passion, creativity, and dedication to IT.',
+    'age': 'Age: <strong>19</strong>',
+    'nationality': 'Nationality: <strong>Ukrainian</strong>',
+    'education': 'Education: 1st year student at <strong>ROC van Twente</strong> at the <strong>Software Developer</strong> course.',
+  };
+
+  const nlTranslations = {
+    'tab-education': 'Opleiding',
+    'tab-experience': 'Ervaring',
+    'tab-skills': 'Vaardigheden',
+    'tab-certificates': 'Certificaten & Prijzen',
+    'tab-contact-me': 'Neem contact op',
+    'portfolio-title': 'Welkom bij mijn Portfolio. Verken een showcase van mijn passie, creativiteit en toewijding aan IT.',
+    'age': 'Leeftijd: <strong>19</strong>',
+    'nationality': 'Nationaliteit: <strong>Oekraïens</strong>',
+    'education': 'Opleiding: 1e jaars student aan het <strong>ROC van Twente</strong> aan de opleiding <strong>Software Developer</strong>.',
+  };
+
+  // Function to set language based on selected language code
+  function setLanguage(langCode) {
+    const translations = langCode === 'nl' ? nlTranslations : enTranslations;
+    Object.keys(translations).forEach(key => {
+      document.getElementById(key).innerHTML = translations[key];
+    });
+  }
+
+  // Event listener for language buttons
+  document.querySelectorAll('.lang-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const langCode = button.getAttribute('data-lang');
+      setLanguage(langCode);
+    });
+  });
+
+  setLanguage('nl');
+</script>
 
 </html>
