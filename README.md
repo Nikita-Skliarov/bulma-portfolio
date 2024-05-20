@@ -42,6 +42,9 @@ You can view the live version of this portfolio at [ns-my-portfolio.nl](http://n
 
 5. Open your web browser and go to `http://localhost:8000` to view the portfolio.
 
+| :exclamation:  This repo has no php file for PHPMailer functionality due to secure reasons of credentials.  |
+|-----------------------------------------|
+
 ## Usage
 
 - Explore the portfolio to view showcased projects.
