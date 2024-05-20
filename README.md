@@ -1,6 +1,7 @@
 # Portfolio
 
 This is a simple portfolio website built using HTML/CSS, Bulma framework, jQuery for frontend interactions, and PHP for backend functionalities like sending emails using PHPMailer.
+![image](https://github.com/Nikita-Skliarov/bulma-portfolio/assets/153517480/4822e459-fd60-45ae-a2eb-a4e6e514a86c)
 
 ## Website
 
