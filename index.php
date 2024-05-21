@@ -20,6 +20,7 @@
   <script src="https://kit.fontawesome.com/c81480a66a.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -44,7 +45,7 @@
           <!-- Language Buttons -->
           <button class="button lang-button" data-lang="en">EN</button>
           <button class="button lang-button" data-lang="nl">NL</button>
-          
+
           <button class="button tab-button" id="tab-education" data-tab="1">
             Education
           </button>
@@ -151,9 +152,9 @@
     <!-- Tab triggers -->
     <div class="tabs is-centered is-large">
       <ul>
-        <li class="is-active tab" data-tab="1"><a>Education</a></li>
+        <li class="is-active tab" data-tab="1"><a>Skills</a></li>
         <li class="tab" data-tab="2"><a>Experience</a></li>
-        <li class="tab" data-tab="3"><a>Skills</a></li>
+        <li class="tab" data-tab="3"><a>Education</a></li>
         <li class="tab" data-tab="4"><a>Certificates</a></li>
       </ul>
     </div>
@@ -161,76 +162,14 @@
     <!-- Tabs sections -->
     <div id="tab-content">
 
-      <!-- Education section (tab) -->
+      <!-- Skills section (tab) -->
       <section class="is-active" data-content="1">
-        <div class="columns is-centered">
-          <div class="column is-half m-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="img/izium-school-logo.webp" alt="Izium school logo" />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">School number 6</p>
-                    <p class="subtitle is-6">Izium, Ukraine</p>
-                  </div>
-                </div>
-                <div class="content">
-                  Studies at school number 6. Graduated in 2021 with a diploma in general education.
-                  Subjects studied: Ukrainian, English, Mathematics (more than 3F accordingly to Dutch grading system),
-                  Physics, Chemistry, Biology, Geography, History (world and Ukraine), IT and Art.
-                  <br />
-                  <time class="has-text-weight-bold">2011 - 2022</time>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="img/isk-het-erasmus-logo.webp" alt="ISK Het Erasmus logo" />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">ISK Het Erasmus</p>
-                    <p class="subtitle is-6">Almelo, Overijssel, Netherlands</p>
-                  </div>
-                </div>
-                <div class="content">
-                  Studies at ISK Het Erasmus. This is a school for children who have recently moved to the Netherlands
-                  and do not speak Dutch. Graduated in 2022 with a diploma.
-                  Subjects studied: Dutch (B2 level), English (around A2), Mathematics (more than 3F).
-                  <br />
-                  <time class="has-text-weight-bold">2022 - 2023</time>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="img/roc-van-twente-logo.webp" alt="ROC van Twente logo" />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">ROC van Twente</p>
-                    <p class="subtitle is-6">Hengelo, Overijssel, Netherlands</p>
-                  </div>
-                </div>
-                <div class="content">
-                  Currently studying at ROC van Twente. This is a vocational school where I am studying to become a
-                  software developer.
-                  Subjects studied (and to be studied): Programming, Databases, Web development, Project management,
-                  English, Dutch, Mathematics, Communication, and Professional skills.
-                  <br />
-                  <time class="has-text-weight-bold">1 july 2023 - 31 june 2027</time>
-                </div>
-              </div>
+        <div class="columns is-centered m-3">
+          <div class="column is-half is-centered">
+            <h1 class="is-size-3 has-text-centered block">(Accordingly to <a href="https://www.nexed.com/"
+                target="_blank">NexEd</a>)</h1>
+            <div>
+              <canvas id="skillsChart"></canvas>
             </div>
           </div>
         </div>
@@ -417,204 +356,79 @@
         </div>
       </section>
 
-      <!-- Skills section (tab) -->
+      <!-- Education section (tab) -->
       <section data-content="3">
-        <div class="columns is-centered m-3">
-          <div class="column is-half">
-            <h1 class="is-size-3 has-text-centered block">(Accordingly to NexEd)</h1>
-
-            <!-- First card -->
+        <div class="columns is-centered">
+          <div class="column is-half m-3">
             <div class="card">
-              <div class="columns is-3">
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="HTMLCSS">
-                  <h1 class="title">HTML/CSS</h1>
-                  <div class="skill">
-                    <div class="outer">
-                      <div class="inner">
-                        <div class='number'>58%</div>
-                      </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <defs>
-                        <linearGradient id="gradientColor">
-                          <stop offset="0%" stop-color="#e91e63"></stop>
-                          <stop offset="100%" stop-color="#673ab7"></stop>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="70" stroke-linecap="round"></circle>
-                    </svg>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/izium-school-logo.webp" alt="Izium school logo" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">School number 6</p>
+                    <p class="subtitle is-6">Izium, Ukraine</p>
                   </div>
                 </div>
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="PHP">
-                  <h1 class="title">PHP</h1>
-                  <div class="skill is-justify-content-center">
-                    <div class="outer">
-                      <div class="inner">
-                        <div class='number'>71%</div>
-                      </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <defs>
-                        <linearGradient id="gradientColor">
-                          <stop offset="0%" stop-color="#e91e63"></stop>
-                          <stop offset="100%" stop-color="#673ab7"></stop>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="70" stroke-linecap="round"></circle>
-                    </svg>
-                  </div>
+                <div class="content">
+                  Studies at school number 6. Graduated in 2021 with a diploma in general education.
+                  Subjects studied: Ukrainian, English, Mathematics (more than 3F accordingly to Dutch grading system),
+                  Physics, Chemistry, Biology, Geography, History (world and Ukraine), IT and Art.
+                  <br />
+                  <time class="has-text-weight-bold">2011 - 2022</time>
                 </div>
               </div>
             </div>
-
-            <!-- Second card -->
             <div class="card">
-              <div class="columns is-3">
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="JavaScript">
-                  <h1 class="title">JavaScript</h1>
-                  <div class="skill">
-                    <div class="outer">
-                      <div class="inner">
-                        <div class='number'>32%</div>
-                      </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <defs>
-                        <linearGradient id="gradientColor">
-                          <stop offset="0%" stop-color="#e91e63"></stop>
-                          <stop offset="100%" stop-color="#673ab7"></stop>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="70" stroke-linecap="round"></circle>
-                    </svg>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/isk-het-erasmus-logo.webp" alt="ISK Het Erasmus logo" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">ISK Het Erasmus</p>
+                    <p class="subtitle is-6">Almelo, Overijssel, Netherlands</p>
                   </div>
                 </div>
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="CSHARP">
-                  <h1 class="title">C#</h1>
-                  <div class="skill is-justify-content-center">
-                    <div class="outer">
-                      <div class="inner">
-                        <div class='number'>30%</div>
-                      </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <defs>
-                        <linearGradient id="gradientColor">
-                          <stop offset="0%" stop-color="#e91e63"></stop>
-                          <stop offset="100%" stop-color="#673ab7"></stop>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="70" stroke-linecap="round"></circle>
-                    </svg>
-                  </div>
+                <div class="content">
+                  Studies at ISK Het Erasmus. This is a school for children who have recently moved to the Netherlands
+                  and do not speak Dutch. Graduated in 2022 with a diploma.
+                  Subjects studied: Dutch (B2 level), English (around A2), Mathematics (more than 3F).
+                  <br />
+                  <time class="has-text-weight-bold">2022 - 2023</time>
                 </div>
               </div>
             </div>
-
-            <!-- Third card -->
             <div class="card">
-              <div class="columns is-3">
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="Laravel">
-                  <h1 class="title">Laravel</h1>
-                  <div class="skill">
-                    <div class="outer">
-                      <div class="inner">
-                        <div class='number'>12%</div>
-                      </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <defs>
-                        <linearGradient id="gradientColor">
-                          <stop offset="0%" stop-color="#e91e63"></stop>
-                          <stop offset="100%" stop-color="#673ab7"></stop>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="70" stroke-linecap="round"></circle>
-                    </svg>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/roc-van-twente-logo.webp" alt="ROC van Twente logo" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">ROC van Twente</p>
+                    <p class="subtitle is-6">Hengelo, Overijssel, Netherlands</p>
                   </div>
                 </div>
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="MySQL">
-                  <h1 class="title">MySQL</h1>
-                  <div class="skill is-justify-content-center">
-                    <div class="outer">
-                      <div class="inner">
-                        <div class='number'>73%</div>
-                      </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <defs>
-                        <linearGradient id="gradientColor">
-                          <stop offset="0%" stop-color="#e91e63"></stop>
-                          <stop offset="100%" stop-color="#673ab7"></stop>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="70" stroke-linecap="round"></circle>
-                    </svg>
-                  </div>
+                <div class="content">
+                  Currently studying at ROC van Twente. This is a vocational school where I am studying to become a
+                  software developer.
+                  Subjects studied (and to be studied): Programming, Databases, Web development, Project management,
+                  English, Dutch  , Mathematics, Communication, and Professional skills.
+                  <br />
+                  <time class="has-text-weight-bold">1 july 2023 - 31 june 2027</time>
                 </div>
-              </div>
-            </div>
-
-            <!-- Fourth card -->
-            <div class="card">
-              <div class="columns is-3">
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="Bootstrap">
-                  <h1 class="title">Bootstrap</h1>
-                  <div class="skill">
-                    <div class="outer">
-                      <div class="inner">
-                        <div class='number'>100%</div>
-                      </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <defs>
-                        <linearGradient id="gradientColor">
-                          <stop offset="0%" stop-color="#e91e63"></stop>
-                          <stop offset="100%" stop-color="#673ab7"></stop>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="70" stroke-linecap="round"></circle>
-                    </svg>
-                  </div>
-                </div>
-                <div class="column is-flex is-flex-direction-column is-align-items-center" id="Security">
-                  <h1 class="title">Security</h1>
-                  <div class="skill is-justify-content-center">
-                    <div class="outer">
-                      <div class="inner">
-                        <div class='number'>41%</div>
-                      </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <defs>
-                        <linearGradient id="gradientColor">
-                          <stop offset="0%" stop-color="#e91e63"></stop>
-                          <stop offset="100%" stop-color="#673ab7"></stop>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="70" stroke-linecap="round"></circle>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Progress bars -->
-            <div class="columns is-centered has-text-weight-bold">
-              <div class="column">
-                <p class="block subtitle">Web</p>
-                <progress class="progress is-link" value="67" max="100">67%</progress>
-                <p class="block subtitle">Scrum</p>
-                <progress class="progress is-primary" value="100" max="100">100%</progress>
-                <p class="block subtitle">SEO</p>
-                <progress class="progress is-info" value="60" max="100">60%</progress>
-                <p class="block subtitle">Git</p>
-                <progress class="progress is-success" value="100" max="100">100%</progress>
-                <p class="block subtitle">Linux</p>
-                <progress class="progress is-danger" value="35" max="100">35%</progress>
               </div>
             </div>
           </div>
+        </div>
       </section>
 
       <!-- Certificates section (tab) -->
@@ -922,6 +736,9 @@
 
 <!-- Stats counter animation -->
 <script src="js/stats-animation.js"></script>
+
+<!-- Charts script -->
+<script src="js/skills-chart.js"></script>
 
 <script>
   const enTranslations = {
