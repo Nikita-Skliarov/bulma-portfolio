@@ -130,7 +130,7 @@
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <h1 class="subtitle is-size-6 half-of-parent">Exercises at school</h1>
-            <h1 class="title half-of-parent count" data-target="525">0</h1>
+            <h1 class="title half-of-parent count" data-target="596">0</h1>
           </div>
           <div class="column">
             <h1 class="subtitle is-size-6 half-of-parent">Projects</h1>
