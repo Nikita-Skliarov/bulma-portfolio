@@ -11,12 +11,20 @@ $(document).ready(function () {
             'ASP.NET',
             'HTML/CSS',
             'CI/CD',
-            'Security',
             'Scrum'
         ],
         datasets: [{
             label: 'Percentage',
-            data: [71, 60, 41, 68, 38, 70, 81, 34, 100],
+            data: [
+                71, // PHP
+                60, // JS
+                50, // C#
+                68, // Laravel
+                42, // ASP.NET
+                70, // HTML/CSS
+                81, // CI/CD
+                100 // Scrum
+            ],
             fill: true,
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgb(255, 99, 132)',

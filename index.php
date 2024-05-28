@@ -43,16 +43,16 @@
       <div class="navbar-item">
         <div class="buttons">
           <!-- Language Buttons -->
-          <button class="button lang-button" data-lang="en">EN</button>
-          <button class="button lang-button" data-lang="nl">NL</button>
+         <!--  <button class="button lang-button" data-lang="en">EN</button>
+          <button class="button lang-button" data-lang="nl">NL</button> -->
 
-          <button class="button tab-button" id="tab-education" data-tab="1">
+          <button class="button tab-button" id="tab-education" data-tab="3">
             Education
           </button>
           <button class="button tab-button" id="tab-experience" data-tab="2">
             Experience
           </button>
-          <button class="button tab-button" id="tab-skills" data-tab="3">
+          <button class="button tab-button" id="tab-skills" data-tab="1">
             Skills
           </button>
           <button class="button tab-button" id="tab-certificates" data-tab="4">
@@ -183,79 +183,9 @@
             <!-- Header -->
             <h1 class="is-size-3 has-text-centered block">List of projects in which I have participated</h1>
 
-            <!-- Content -->
-            <div class="columns">
-
-              <!-- First pair -->
-              <div class="column is-half">
-                <div class="card card-with-full-height">
-                  <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img src="img/memory.webp" alt="Memory game image" />
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4">Memory Game</p>
-                        <p class="subtitle is-6">JS, HTML/CSS</p>
-                      </div>
-                    </div>
-                    <div class="content">
-                      A simple memory game created with HTML, CSS, and JavaScript. The game has 30 cards with 15 pairs
-                      of images. The game has a timer and a score counter of two players.
-                      <br />
-                      <time class="has-text-weight-bold">November 2023</time>
-                    </div>
-                  </div>
-                  <footer class="card-footer">
-                    <p class="card-footer-item">
-                      <span>
-                        <a href="https://github.com/Nikita-Skliarov/memory-game" target="_blank">GitHub <i
-                            class="fa-brands fa-square-github"></i></a>
-                      </span>
-                    </p>
-                  </footer>
-                </div>
-              </div>
-              <div class="column is-half">
-                <div class="card card-with-full-height">
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4">Bootstrap portfolio</p>
-                        <p class="subtitle is-6">JS, HTML/CSS (+ <strong>Bootstrap</strong> framework), PHP, DB
-                          (phpMyAdmin), PDO</p>
-                      </div>
-                    </div>
-                    <div class="content">
-                      This was a first version of my portoflio created with Bootstrap which was part of the school
-                      exercise. The portfolio has a page with info about me and working log-in and sign-up pages.
-                      <br />
-                      <br />
-                      <time class="has-text-weight-bold">December 2023</time>
-                    </div>
-                  </div>
-                  <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img src="img/bootstrap-portfolio.webp" alt="Bootstrp portfolio preview image" />
-                    </figure>
-                  </div>
-                  <footer class="card-footer">
-                    <p class="card-footer-item">
-                      <span>
-                        <a href="https://github.com/Nikita-Skliarov/bootstrap-portfolio" target="_blank">GitHub <i
-                            class="fa-brands fa-square-github"></i></a>
-                      </span>
-                    </p>
-                  </footer>
-                </div>
-              </div>
-            </div>
-
             <!-- Second pair -->
-            <div class="columns">
-              <div class="column is-half">
+            <div class="columns is-centered">
+              <div class="column is-four-fifths">
                 <div class="card card-with-full-height">
                   <div class="card-content">
                     <div class="media">
@@ -289,43 +219,11 @@
                   </footer>
                 </div>
               </div>
-              <div class="column is-half">
-                <div class="card card-with-full-height">
-                  <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img src="img/country-game.webp" alt="Gues the country game image" />
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4">Country Guess Game</p>
-                        <p class="subtitle is-6">JS, PHP, HTML/CSS (+ <strong>Bootstrap</strong> framework), DB
-                          (phpMyAdmin), PDO</p>
-                      </div>
-                    </div>
-                    <div class="content">
-                      A game where you have to guess the country by the flag. The game has a timer and a score counter.
-                      The game has a database where the user's score is stored.
-                      <br />
-                      <time class="has-text-weight-bold">January 2024</time>
-                    </div>
-                  </div>
-                  <footer class="card-footer">
-                    <p class="card-footer-item">
-                      <span>
-                        <a href="https://github.com/Nikita-Skliarov/bootstrap-portfolio" target="_blank">GitHub <i
-                            class="fa-brands fa-square-github"></i></a>
-                      </span>
-                    </p>
-                  </footer>
-                </div>
-              </div>
             </div>
 
             <!-- Third pair (only 1 now) -->
-            <div class="columns">
-              <div class="column">
+            <div class="columns is-centered">
+              <div class="column is-four-fifths">
                 <div class="card">
                   <div class="card-content">
                     <div class="media">
@@ -439,17 +337,6 @@
             <div class="timeline-area">
               <div class="container">
                 <div class="all-timelines">
-
-                  <!--SINGLE TIMELINE-->
-                  <div class="single-timeline d-flex-2">
-                    <div class="timeline-blank"></div>
-                    <div class="timeline-text d-flex-2">
-                      <span>
-                        <h6>Sep 5, 2023</h6> Command line
-                      </span>
-                      <div class="t-square"></div>
-                    </div>
-                  </div>
 
                   <!--SINGLE TIMELINE-->
                   <div class="single-timeline d-flex-2">
@@ -621,6 +508,42 @@
                     </div>
                   </div>
 
+                  <!--SINGLE TIMELINE-->
+                  <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                      <span>
+                        <h6>May 13, 2024</h6>
+                        C# Beginner
+                      </span>
+                      <div class="t-square"></div>
+                    </div>
+                  </div>
+
+                  <!--SINGLE TIMELINE-->
+                  <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                      <span>
+                        <h6>May 21, 2024</h6>
+                        CSS Pro
+                      </span>
+                      <div class="t-square"></div>
+                    </div>
+                  </div>
+                  
+                  <!--SINGLE TIMELINE-->
+                  <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                      <span>
+                        <h6>May 28, 2024</h6>
+                        C# Novice
+                      </span>
+                      <div class="t-square"></div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -741,7 +664,7 @@
 <script src="js/skills-chart.js"></script>
 
 <script>
-  const enTranslations = {
+  /* const enTranslations = {
     'tab-education': 'Education',
     'tab-experience': 'Experience',
     'tab-skills': 'Skills',
@@ -781,7 +704,7 @@
     });
   });
 
-  setLanguage('nl');
+  setLanguage('nl'); */
 </script>
 
 </html>
