@@ -18,7 +18,7 @@ $(document).ready(function () {
             data: [
                 71, // PHP
                 60, // JS
-                50, // C#
+                58, // C#
                 68, // Laravel
                 42, // ASP.NET
                 70, // HTML/CSS
@@ -53,7 +53,9 @@ $(document).ready(function () {
                     ticks: {
                         backdropColor: theme === 'dark' ? 'rgba(0, 0, 0, 0.5)' : 'rgba(255, 255, 255, 0.5)',
                         color: theme === 'dark' ? 'white' : 'black'
-                    }
+                    },
+                    suggestedMin: 0,
+                    suggestedMax: 100
                 }
             },
             elements: {
